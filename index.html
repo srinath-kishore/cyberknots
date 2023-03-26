@@ -24,68 +24,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Cyberknots</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link text-success" href="#">Home</a>
-            <a class="nav-link text-light" href="#">Events</a>
-            <a class="nav-link text-light" href="#">Contact</a>
+    <div class="content">
+      <section class="welcome">
+        <div class="overlay"></div>
+        <h1>Cyberknots 2k23</h1>
+      </section>
+
+      <section>
+        <h1 class="p-3 m-0 text-center events-title">Events</h1>
+        <div id="events">
+          <div id="tech-events">
+            <h3>Technical Events</h3>
+            <ul>
+              <li class="event">Paper Presentation</li>
+              <li class="event">Project Expo</li>
+              <li class="event">UI Design</li>
+              <li class="event">Technical Quiz</li>
+              <li class="event">Code Debugging</li>
+              <li class="event">Competitive Coding</li>
+              <li class="event">PC Building</li>
+            </ul>
+          </div>
+          <div id="non-tech-events">
+            <h3>Non Technical Events</h3>
+            <ul>
+              <li class="event">Gaming</li>
+              <li class="event">Movie Quiz</li>
+              <li class="event">Connexion</li>
+              <li class="event">Marvel/DC Quiz</li>
+              <li class="event">Anime Quiz</li>
+              <li class="event">Poster Design</li>
+              <li class="event">Chess</li>
+              <li class="event">Carrom</li>
+              <li class="event">Singing</li>
+            </ul>
           </div>
         </div>
+      </section>
+
+      <div id="register" class="m-5">
+        <form action="">
+          <label for="name">Name <sup class="req">*</sup></label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+          <br />
+          <label for="email">Email <sup class="req">*</sup></label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+          <br />
+          <label for="whatsapp">Whatsapp Number <sup class="req">*</sup></label>
+          <input
+            class="form-control"
+            type="text"
+            name="whatsapp"
+            id="whatsapp"
+            required
+          />
+          <br />
+          <label for="college">College Name <sup class="req">*</sup></label>
+          <input
+            class="form-control"
+            type="text"
+            name="college"
+            id="college"
+            required
+          />
+          <br />
+          <label for="referral"
+            >Referral ID <sup class="req">(optional)</sup></label
+          >
+          <input
+            class="form-control"
+            type="text"
+            name="referral"
+            id="referral"
+          />
+          <br />
+          <label for="event-choice" aria-required="true"
+            >Events (Select Upto 3 events) <sup class="req">*</sup>
+          </label>
+        </form>
       </div>
-    </nav>
-    <div class="welcome">
-      <div class="overlay">
-        <h1>Cyberknots 2k23</h1>
-      </div>
-    </div>
-    <h1 class="p-3 m-0 text-center events-title">Events</h1>
-    <div id="events">
-      <div id="tech-events">
-        <h3>Technical Events</h3>
-        <ul>
-          <li class="event">Paper Presentation</li>
-          <li class="event">Project Expo</li>
-          <li class="event">UI Design</li>
-          <li class="event">Technical Quiz</li>
-          <li class="event">Code Debugging</li>
-          <li class="event">Competitive Coding</li>
-          <li class="event">PC Building</li>
-        </ul>
-      </div>
-      <div id="non-tech-events">
-        <h3>Non Technical Events</h3>
-        <ul>
-          <li class="event">Gaming</li>
-          <li class="event">Movie Quiz</li>
-          <li class="event">Connexion</li>
-          <li class="event">Marvel/DC Quiz</li>
-          <li class="event">Anime Quiz</li>
-          <li class="event">Poster Design</li>
-          <li class="event">Chess</li>
-          <li class="event">Carrom</li>
-          <li class="event">Singing</li>
-        </ul>
-      </div>
-    </div>
-    <div id="register">
-      <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-      </form>
     </div>
   </body>
 </html>
